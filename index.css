@@ -22,6 +22,11 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.container.disable :where(.editor-panel, .reset-filter, .save-img) {
+opacity: 0.6;
+pointer-events: none;
+}
+
 .container h2 {
   font-size: 22px;
   font-weight: 500;
@@ -113,6 +118,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .preview-img img {
